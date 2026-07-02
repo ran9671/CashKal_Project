@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- home screen text: greeting and summary cards -->
+    <string name="home_greeting">שלום, %1$s</string>
+    <string name="home_greeting_default">שלום</string>
+    <string name="home_budget_label">תקציב חודשי</string>
+    <string name="home_income_label">הכנסה צפויה</string>
+    <string name="home_balance_label">מאזן נטו</string>
+
+    <!-- money format with two decimals -->
+    <string name="currency_format">₪%.2f</string>
+
+    <!-- dashboard action buttons -->
+    <string name="home_add_expense">+ הוסף הוצאה</string>
+    <string name="home_add_income">+ הוסף הכנסה</string>
+    <string name="coming_soon">בקרוב 🚧</string>
+
+    <!-- bottom navigation tab titles -->
+    <string name="nav_home">בית</string>
+    <string name="nav_expenses">הוצאות</string>
+    <string name="nav_income">הכנסות</string>
+    <string name="nav_insights">תובנות</string>
+
+    <!-- recent transactions section -->
+    <string name="home_recent_title">עסקאות אחרונות</string>
+    <string name="home_no_transactions">אין עדיין עסקאות</string>
+
+</resources>
