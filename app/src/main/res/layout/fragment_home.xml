@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true">
+
+    <!-- vertical stack of the dashboard content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- greeting at the top -->
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_greeting_default"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- monthly budget card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_budget_label"
+            android:textColor="@color/muted_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_budget_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- expected income card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_income_label"
+            android:textColor="@color/muted_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_income_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/growth_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- net balance card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_balance_label"
+            android:textColor="@color/muted_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_balance_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- action buttons -->
+        <Button
+            android:id="@+id/btn_add_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_add_expense"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_add_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_add_income"
+            android:backgroundTint="@color/growth_green"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
