@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- home dashboard -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cashkal.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- placeholders: point to HomeFragment until real fragments exist in phase 2 -->
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.example.cashkal.HomeFragment"
+        android:label="@string/nav_expenses" />
+
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.example.cashkal.HomeFragment"
+        android:label="@string/nav_income" />
+
+    <fragment
+        android:id="@+id/insightsFragment"
+        android:name="com.example.cashkal.HomeFragment"
+        android:label="@string/nav_insights" />
+
+</navigation>
