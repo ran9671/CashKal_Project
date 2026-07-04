@@ -4,27 +4,56 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.cashkal.R;
 import com.example.cashkal.model.User;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-// holds the home screen data and survives screen rotation
 public class HomeViewModel extends ViewModel {
 
-    // internal, editable data holder
     private final MutableLiveData<User> user = new MutableLiveData<>();
+    private final MutableLiveData<Integer> errorMessage = new MutableLiveData<>();
 
-    // read-only view of the user that the fragment observes
+    private final FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    private final FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+
     public LiveData<User> getUser() {
         return user;
     }
 
-    // loads the current user's profile
-    // TODO: read from Firestore users/{uid} after feat/auth is merged
+    public LiveData<Integer> getErrorMessage() {
+        return errorMessage;
+    }
+
     public void loadUser() {
-        // temporary placeholder so the screen shows something before Firebase is wired
-        User placeholder = new User();
-        placeholder.setFullName("");
-        placeholder.setMonthlyBudget(0);
-        placeholder.setExpectedMonthlyIncome(0);
-        user.setValue(placeholder);
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+
+        if (currentUser == null) {
+            errorMessage.setValue(R.string.auth_error_not_logged_in);
+            return;
+        }
+
+        String uid = currentUser.getUid();
+
+        firestore.collection("users")
+                .document(uid)
+                .get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        User loadedUser = documentSnapshot.toObject(User.class);
+
+                        if (loadedUser != null) {
+                            user.setValue(loadedUser);
+                        } else {
+                            errorMessage.setValue(R.string.home_error_load_user);
+                        }
+                    } else {
+                        errorMessage.setValue(R.string.home_error_missing_profile);
+                    }
+                })
+                .addOnFailureListener(e ->
+                        errorMessage.setValue(R.string.home_error_load_user)
+                );
     }
 }

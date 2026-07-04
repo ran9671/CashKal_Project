@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832331997934",
+    "project_id": "cashkal-74075",
+    "storage_bucket": "cashkal-74075.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832331997934:android:cadf415006f1b3e93d09ff",
+        "android_client_info": {
+          "package_name": "com.example.cashkal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH6rxvGoj8mrpQZg4pzs0WLqdzAueBGRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

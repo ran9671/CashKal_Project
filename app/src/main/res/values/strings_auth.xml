@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_welcome_title">ברוכים הבאים ל-CashKal</string>
+    <string name="auth_welcome_subtitle">האפליקציה שתעזור לך לעקוב אחרי הכנסות, הוצאות ומה באמת קורה לכסף שלך.</string>
+
+    <string name="auth_info_title">ניהול כסף פשוט וברור</string>
+    <string name="auth_info_text">רשום הכנסות, עקוב אחרי הוצאות, וקבל תמונה ברורה של התקציב החודשי שלך.</string>
+
+    <string name="auth_login_button">התחברות</string>
+    <string name="auth_register_button">הרשמה</string>
+
+    <string name="auth_login_coming_next">מסך ההתחברות יתווסף בשלב הבא</string>
+    <string name="auth_register_coming_next">מסך ההרשמה יתווסף בשלב הבא</string>
+
+    <string name="auth_login_title">התחברות</string>
+    <string name="auth_login_subtitle">התחבר/י כדי להמשיך לניהול התקציב שלך</string>
+    <string name="auth_email">אימייל</string>
+    <string name="auth_password">סיסמה</string>
+    <string name="auth_no_account">אין לך חשבון? הרשמה</string>
+
+    <string name="auth_error_empty">לא כל השדות מלאים </string>
+    <string name="auth_login_success">התחברת בהצלחה</string>
+    <string name="auth_login_failed">האימייל או הסיסמה אינם נכונים</string>
+
+    <string name="auth_register_title">הרשמה</string>
+    <string name="auth_register_subtitle">פתח/י חשבון חדש והתחל/י לנהל את הכסף שלך</string>
+    <string name="auth_full_name">שם מלא</string>
+    <string name="auth_confirm_password">אישור סיסמה</string>
+    <string name="auth_monthly_budget">תקציב חודשי</string>
+    <string name="auth_expected_income">הכנסה חודשית צפויה</string>
+    <string name="auth_have_account">כבר יש לך חשבון? התחברות</string>
+
+    <string name="auth_error_password_short">הסיסמה חייבת להכיל לפחות 6 תווים</string>
+    <string name="auth_error_password_mismatch">הסיסמאות לא תואמות</string>
+    <string name="auth_error_numbers">נא להזין מספרים תקינים</string>
+    <string name="auth_error_positive_numbers">תקציב והכנסה חייבים להיות גדולים מ-0</string>
+
+    <string name="auth_register_success">נרשמת בהצלחה</string>
+    <string name="auth_register_failed">ההרשמה נכשלה. בדוק/י את הפרטים ונסה/י שוב</string>
+    <string name="auth_firestore_save_failed">המשתמש נוצר, אבל שמירת הפרטים נכשלה</string>
+
+    <string name="auth_error_not_logged_in">צריך להתחבר מחדש</string>
+</resources>
