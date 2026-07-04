@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         binding.btnLogin.setOnClickListener(view -> loginUser());
 
         binding.tvGoToRegister.setOnClickListener(view ->
-                Toast.makeText(this, R.string.auth_register_coming_next, Toast.LENGTH_SHORT).show()
+                startActivity(new Intent(this, RegisterActivity.class))
         );
     }
 

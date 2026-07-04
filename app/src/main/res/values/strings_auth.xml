@@ -21,4 +21,21 @@
     <string name="auth_error_empty">לא כל השדות מלאים </string>
     <string name="auth_login_success">התחברת בהצלחה</string>
     <string name="auth_login_failed">האימייל או הסיסמה אינם נכונים</string>
+
+    <string name="auth_register_title">הרשמה</string>
+    <string name="auth_register_subtitle">פתח/י חשבון חדש והתחל/י לנהל את הכסף שלך</string>
+    <string name="auth_full_name">שם מלא</string>
+    <string name="auth_confirm_password">אישור סיסמה</string>
+    <string name="auth_monthly_budget">תקציב חודשי</string>
+    <string name="auth_expected_income">הכנסה חודשית צפויה</string>
+    <string name="auth_have_account">כבר יש לך חשבון? התחברות</string>
+
+    <string name="auth_error_password_short">הסיסמה חייבת להכיל לפחות 6 תווים</string>
+    <string name="auth_error_password_mismatch">הסיסמאות לא תואמות</string>
+    <string name="auth_error_numbers">נא להזין מספרים תקינים</string>
+    <string name="auth_error_positive_numbers">תקציב והכנסה חייבים להיות גדולים מ-0</string>
+
+    <string name="auth_register_success">נרשמת בהצלחה</string>
+    <string name="auth_register_failed">ההרשמה נכשלה. בדוק/י את הפרטים ונסה/י שוב</string>
+    <string name="auth_firestore_save_failed">המשתמש נוצר, אבל שמירת הפרטים נכשלה</string>
 </resources>

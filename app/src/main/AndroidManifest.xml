@@ -13,6 +13,10 @@
         android:theme="@style/Theme.CashKal">
 
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
 

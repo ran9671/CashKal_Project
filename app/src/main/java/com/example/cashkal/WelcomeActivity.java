@@ -1,7 +1,6 @@
 package com.example.cashkal;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,15 +23,13 @@ public class WelcomeActivity extends AppCompatActivity {
         setupClickListeners();
     }
 
-    ///temp actions
-
     private void setupClickListeners() {
         binding.btnLogin.setOnClickListener(view ->
                 startActivity(new Intent(this, LoginActivity.class))
         );
 
         binding.btnRegister.setOnClickListener(view ->
-                Toast.makeText(this, R.string.auth_register_coming_next, Toast.LENGTH_SHORT).show()
+                startActivity(new Intent(this, RegisterActivity.class))
         );
     }
 }
