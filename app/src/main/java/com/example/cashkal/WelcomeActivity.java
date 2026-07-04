@@ -6,6 +6,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cashkal.databinding.ActivityWelcomeBinding;
+import android.content.Intent;
 
 ///open screen
 
@@ -27,7 +28,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void setupClickListeners() {
         binding.btnLogin.setOnClickListener(view ->
-                Toast.makeText(this, R.string.auth_login_coming_next, Toast.LENGTH_SHORT).show()
+                startActivity(new Intent(this, LoginActivity.class))
         );
 
         binding.btnRegister.setOnClickListener(view ->

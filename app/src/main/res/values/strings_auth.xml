@@ -11,4 +11,14 @@
 
     <string name="auth_login_coming_next">מסך ההתחברות יתווסף בשלב הבא</string>
     <string name="auth_register_coming_next">מסך ההרשמה יתווסף בשלב הבא</string>
+
+    <string name="auth_login_title">התחברות</string>
+    <string name="auth_login_subtitle">התחבר/י כדי להמשיך לניהול התקציב שלך</string>
+    <string name="auth_email">אימייל</string>
+    <string name="auth_password">סיסמה</string>
+    <string name="auth_no_account">אין לך חשבון? הרשמה</string>
+
+    <string name="auth_error_empty">לא כל השדות מלאים </string>
+    <string name="auth_login_success">התחברת בהצלחה</string>
+    <string name="auth_login_failed">האימייל או הסיסמה אינם נכונים</string>
 </resources>
