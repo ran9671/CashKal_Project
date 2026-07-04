@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-    
+
     private void openWelcome() {
         Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);

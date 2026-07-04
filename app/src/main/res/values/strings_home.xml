@@ -26,4 +26,7 @@
     <string name="home_recent_title">עסקאות אחרונות</string>
     <string name="home_no_transactions">אין עדיין עסקאות</string>
 
+
+    <string name="home_error_load_user">טעינת פרטי המשתמש נכשלה</string>
+    <string name="home_error_missing_profile">לא נמצאו פרטי משתמש במסד הנתונים</string>
 </resources>

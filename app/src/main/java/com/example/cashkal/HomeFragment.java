@@ -62,7 +62,10 @@ public class HomeFragment extends Fragment {
             double net = user.getExpectedMonthlyIncome() - user.getMonthlyBudget();
             binding.tvBalanceAmount.setText(getString(R.string.currency_format, net));
         });
-
+        mViewModel.getErrorMessage().observe(getViewLifecycleOwner(), messageResId -> {
+            if (messageResId == null) return;
+            Toast.makeText(getContext(), messageResId, Toast.LENGTH_SHORT).show();
+        });
         // load the user data
         mViewModel.loadUser();
 

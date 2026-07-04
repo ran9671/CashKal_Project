@@ -38,4 +38,6 @@
     <string name="auth_register_success">נרשמת בהצלחה</string>
     <string name="auth_register_failed">ההרשמה נכשלה. בדוק/י את הפרטים ונסה/י שוב</string>
     <string name="auth_firestore_save_failed">המשתמש נוצר, אבל שמירת הפרטים נכשלה</string>
+
+    <string name="auth_error_not_logged_in">צריך להתחבר מחדש</string>
 </resources>
