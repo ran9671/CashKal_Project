@@ -18,13 +18,14 @@
 
     <!-- bottom navigation tab titles -->
     <string name="nav_home">בית</string>
-    <string name="nav_expenses">הוצאות</string>
-    <string name="nav_income">הכנסות</string>
     <string name="nav_insights">תובנות</string>
+    <string name="nav_transactions">תנועות</string>
+    <string name="nav_settings">הגדרות</string>
 
     <!-- recent transactions section -->
     <string name="home_recent_title">עסקאות אחרונות</string>
     <string name="home_no_transactions">אין עדיין עסקאות</string>
+
 
 
     <string name="home_error_load_user">טעינת פרטי המשתמש נכשלה</string>

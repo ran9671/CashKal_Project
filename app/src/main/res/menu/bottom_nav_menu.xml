@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- each item id must match a destination id in nav_graph.xml -->
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_nav_home"
         android:title="@string/nav_home" />
 
     <item
-        android:id="@+id/expensesFragment"
+        android:id="@+id/transactionsFragment"
         android:icon="@drawable/ic_nav_expenses"
-        android:title="@string/nav_expenses" />
-
-    <item
-        android:id="@+id/incomeFragment"
-        android:icon="@drawable/ic_nav_income"
-        android:title="@string/nav_income" />
+        android:title="@string/nav_transactions" />
 
     <item
         android:id="@+id/insightsFragment"
         android:icon="@drawable/ic_nav_insights"
         android:title="@string/nav_insights" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/nav_settings" />
 
 </menu>

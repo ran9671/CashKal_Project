@@ -5,27 +5,25 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
-    <!-- home dashboard -->
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.cashkal.HomeFragment"
         android:label="@string/nav_home"
         tools:layout="@layout/fragment_home" />
 
-    <!-- placeholders: point to HomeFragment until real fragments exist in phase 2 -->
     <fragment
-        android:id="@+id/expensesFragment"
+        android:id="@+id/transactionsFragment"
         android:name="com.example.cashkal.HomeFragment"
-        android:label="@string/nav_expenses" />
-
-    <fragment
-        android:id="@+id/incomeFragment"
-        android:name="com.example.cashkal.HomeFragment"
-        android:label="@string/nav_income" />
+        android:label="@string/nav_transactions" />
 
     <fragment
         android:id="@+id/insightsFragment"
         android:name="com.example.cashkal.HomeFragment"
         android:label="@string/nav_insights" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.cashkal.HomeFragment"
+        android:label="@string/nav_settings" />
 
 </navigation>
