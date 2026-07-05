@@ -57,4 +57,20 @@
         <item>אחר</item>
     </string-array>
 
+    <!-- add income screen -->
+    <string name="add_income_title">הוספת הכנסה</string>
+    <string name="save_income">שמור הכנסה</string>
+    <string name="hint_description_income">לדוגמה: משכורת, מתנה, החזר</string>
+
+    <!-- income category options; Ran replaces with DB values later -->
+    <string-array name="income_categories">
+        <item>משכורת</item>
+        <item>מתנה</item>
+        <item>החזר</item>
+        <item>השקעות</item>
+        <item>אחר</item>
+    </string-array>
+
+    <string name="cancel">ביטול</string>
+
 </resources>

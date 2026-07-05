@@ -75,8 +75,11 @@ public class HomeFragment extends Fragment {
             Intent intent = new Intent(getActivity(), AddExpenseActivity.class);
             startActivity(intent);
         });
+
+        // open the add income screen
         binding.btnAddIncome.setOnClickListener(v -> {
-            Toast.makeText(getContext(), R.string.coming_soon, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), AddIncomeActivity.class);
+            startActivity(intent);
         });
     }
 

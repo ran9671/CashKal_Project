@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_expense_title"
+            android:text="@string/add_income_title"
             android:textColor="@color/text_primary"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -49,7 +49,7 @@
             android:id="@+id/et_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_description"
+            android:hint="@string/hint_description_income"
             android:layout_marginBottom="16dp" />
 
         <!-- category dropdown -->
@@ -64,46 +64,8 @@
             android:id="@+id/sp_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/expense_categories"
+            android:entries="@array/income_categories"
             android:layout_marginBottom="16dp" />
-
-        <!-- expense type (replaces payment) -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/field_expense_type"
-            android:textColor="@color/muted_text"
-            android:textSize="14sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_expense_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
-
-            <RadioButton
-                android:id="@+id/rb_essential"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/expense_type_essential" />
-
-            <RadioButton
-                android:id="@+id/rb_indulgence"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/expense_type_indulgence" />
-
-            <RadioButton
-                android:id="@+id/rb_unnecessary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/expense_type_unnecessary" />
-
-        </RadioGroup>
 
         <!-- date field -->
         <TextView
@@ -140,16 +102,16 @@
 
         <!-- save button -->
         <Button
-            android:id="@+id/btn_save_expense"
+            android:id="@+id/btn_save_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save_expense"
-            android:backgroundTint="@color/primary"
+            android:text="@string/save_income"
+            android:backgroundTint="@color/growth_green"
             android:textColor="@color/white" />
 
         <!-- cancel and go back without saving -->
         <Button
-            android:id="@+id/btn_cancel_expense"
+            android:id="@+id/btn_cancel_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cancel"

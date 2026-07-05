@@ -7,21 +7,21 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cashkal.databinding.ActivityAddExpenseBinding;
+import com.example.cashkal.databinding.ActivityAddIncomeBinding;
 
 import java.util.Calendar;
 import java.util.Locale;
 
-// screen for adding a new expense (UI only for now, no database)
-public class AddExpenseActivity extends AppCompatActivity {
+// screen for adding a new income (UI only for now, no database)
+public class AddIncomeActivity extends AppCompatActivity {
 
-    private ActivityAddExpenseBinding binding;
+    private ActivityAddIncomeBinding binding;
     private final Calendar selectedDate = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityAddExpenseBinding.inflate(getLayoutInflater());
+        binding = ActivityAddIncomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         // show today's date to start
@@ -31,10 +31,10 @@ public class AddExpenseActivity extends AppCompatActivity {
         binding.etDate.setOnClickListener(v -> showDatePicker());
 
         // handle the save button
-        binding.btnSaveExpense.setOnClickListener(v -> saveExpense());
+        binding.btnSaveIncome.setOnClickListener(v -> saveIncome());
 
         // cancel and return without saving
-        binding.btnCancelExpense.setOnClickListener(v -> finish());
+        binding.btnCancelIncome.setOnClickListener(v -> finish());
     }
 
     // opens the calendar dialog and stores the chosen date
@@ -61,7 +61,7 @@ public class AddExpenseActivity extends AppCompatActivity {
     }
 
     // validates the form and (for now) shows a confirmation toast
-    private void saveExpense() {
+    private void saveIncome() {
         String amount = binding.etAmount.getText().toString().trim();
 
         if (TextUtils.isEmpty(amount)) {
@@ -69,8 +69,8 @@ public class AddExpenseActivity extends AppCompatActivity {
             return;
         }
 
-        // TODO: Ran will save this expense to Firestore
-        Toast.makeText(this, R.string.save_expense, Toast.LENGTH_SHORT).show();
+        // TODO: Ran will save this income to Firestore
+        Toast.makeText(this, R.string.save_income, Toast.LENGTH_SHORT).show();
         finish();
     }
 }
