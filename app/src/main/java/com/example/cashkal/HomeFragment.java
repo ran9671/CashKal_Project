@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.cashkal.databinding.FragmentHomeBinding;
 import com.example.cashkal.model.User;
 import com.example.cashkal.ui.home.HomeViewModel;
+import android.content.Intent;
 
 public class HomeFragment extends Fragment {
 
@@ -69,9 +70,10 @@ public class HomeFragment extends Fragment {
         // load the user data
         mViewModel.loadUser();
 
-        // buttons are placeholders until the add transaction screen exists
+        // open the add expense screen
         binding.btnAddExpense.setOnClickListener(v -> {
-            Toast.makeText(getContext(), R.string.coming_soon, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), AddExpenseActivity.class);
+            startActivity(intent);
         });
         binding.btnAddIncome.setOnClickListener(v -> {
             Toast.makeText(getContext(), R.string.coming_soon, Toast.LENGTH_SHORT).show();
