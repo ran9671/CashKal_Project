@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- primary pill button, iOS style -->
+    <style name="CashKalButton">
+        <item name="android:background">@drawable/bg_button_rounded</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- rounded input field -->
+    <style name="CashKalInput">
+        <item name="android:background">@drawable/bg_input_rounded</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- white rounded card container -->
+    <style name="CashKalCard">
+        <item name="android:background">@drawable/bg_card_rounded</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- small muted field label -->
+    <style name="CashKalLabel">
+        <item name="android:textColor">@color/muted_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- large bold section title -->
+    <style name="CashKalTitle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

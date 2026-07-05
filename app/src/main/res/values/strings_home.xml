@@ -26,8 +26,35 @@
     <string name="home_recent_title">עסקאות אחרונות</string>
     <string name="home_no_transactions">אין עדיין עסקאות</string>
 
-
-
     <string name="home_error_load_user">טעינת פרטי המשתמש נכשלה</string>
     <string name="home_error_missing_profile">לא נמצאו פרטי משתמש במסד הנתונים</string>
+
+    <!-- add expense screen: title and field labels -->
+    <string name="add_expense_title">הוספת הוצאה</string>
+    <string name="field_amount">סכום</string>
+    <string name="field_description">תיאור</string>
+    <string name="field_category">קטגוריה</string>
+    <string name="field_expense_type">סוג הוצאה</string>
+    <string name="field_date">תאריך</string>
+    <string name="field_note">הסבר</string>
+    <string name="save_expense">שמור הוצאה</string>
+
+    <!-- add expense screen: input hints -->
+    <string name="hint_description">לדוגמה: קפה, נסיעה, ספרים</string>
+    <string name="hint_note">אפשר להשאיר ריק ולמלא אחר כך</string>
+
+    <!-- expense type options (פינוק / הכרחי / מיותר) -->
+    <string name="expense_type_indulgence">פינוק</string>
+    <string name="expense_type_essential">הכרחי</string>
+    <string name="expense_type_unnecessary">מיותר</string>
+
+    <!-- category options for the dropdown; Ran replaces these with DB values later -->
+    <string-array name="expense_categories">
+        <item>מזון</item>
+        <item>תחבורה</item>
+        <item>קניות</item>
+        <item>בילויים</item>
+        <item>אחר</item>
+    </string-array>
+
 </resources>
