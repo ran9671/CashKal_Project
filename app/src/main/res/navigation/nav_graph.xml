@@ -13,8 +13,9 @@
 
     <fragment
         android:id="@+id/transactionsFragment"
-        android:name="com.example.cashkal.HomeFragment"
-        android:label="@string/nav_transactions" />
+        android:name="com.example.cashkal.TransactionsFragment"
+        android:label="@string/nav_transactions"
+        tools:layout="@layout/fragment_transactions" />
 
     <fragment
         android:id="@+id/insightsFragment"

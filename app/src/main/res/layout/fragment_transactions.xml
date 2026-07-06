@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transactions_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvTransactionsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/transactions_title"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/cardFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_card_rounded"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTypeFilterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/transactions_type_title"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgTypeFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbShowBoth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/transactions_show_both"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbShowExpenses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/transactions_show_expenses"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbShowIncome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/transactions_show_income"
+                android:textColor="@color/text_primary" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSortTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="end"
+            android:text="@string/transactions_sort_title"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbDateDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/transactions_sort_date_desc"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbDateAsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transactions_sort_date_asc"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbHighToLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transactions_sort_high_low"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbLowToHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transactions_sort_low_high"
+                android:textColor="@color/text_primary" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnChooseCategories"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@color/aqua"
+            android:text="@string/transactions_choose_categories"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvSelectedCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/transactions_all_categories"
+            android:textColor="@color/muted_text"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmptyTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/transactions_empty"
+        android:textColor="@color/muted_text"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="12dp" />
+
+</LinearLayout>

@@ -99,4 +99,26 @@
 
     <string name="cancel">ביטול</string>
 
+    <string name="transactions_title">תנועות</string>
+
+    <string name="transactions_type_title">מה להציג?</string>
+    <string name="transactions_show_both">הכל</string>
+    <string name="transactions_show_expenses">הוצאות</string>
+    <string name="transactions_show_income">הכנסות</string>
+
+    <string name="transactions_sort_title">מיון</string>
+    <string name="transactions_sort_date_desc">תאריך - החדש ביותר</string>
+    <string name="transactions_sort_date_asc">תאריך - הישן ביותר</string>
+    <string name="transactions_sort_high_low">סכום - מהגבוה לנמוך</string>
+    <string name="transactions_sort_low_high">סכום - מהנמוך לגבוה</string>
+
+    <string name="transactions_choose_categories">בחירת קטגוריות</string>
+    <string name="transactions_all_categories">כל הקטגוריות</string>
+    <string name="transactions_categories_count">%1$d קטגוריות נבחרו</string>
+    <string name="transactions_apply">אישור</string>
+
+    <string name="transactions_empty">אין עדיין תנועות להצגה</string>
+    <string name="transactions_load_failed">טעינת התנועות נכשלה</string>
+    <string name="transactions_income">הכנסה</string>
+    <string name="transactions_expense">הוצאה</string>
 </resources>
