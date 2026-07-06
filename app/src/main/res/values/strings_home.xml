@@ -48,7 +48,7 @@
     <string name="expense_type_essential">הכרחי</string>
     <string name="expense_type_unnecessary">מיותר</string>
 
-    <!-- category options for the dropdown; Ran replaces these with DB values later -->
+    <!-- category options for the dropdown -->
     <string-array name="expense_categories">
         <item>מזון</item>
         <item>תחבורה</item>
@@ -62,7 +62,7 @@
     <string name="save_income">שמור הכנסה</string>
     <string name="hint_description_income">לדוגמה: משכורת, מתנה, החזר</string>
 
-    <!-- income category options; Ran replaces with DB values later -->
+    <!-- income category options -->
     <string-array name="income_categories">
         <item>משכורת</item>
         <item>מתנה</item>
@@ -70,6 +70,23 @@
         <item>השקעות</item>
         <item>אחר</item>
     </string-array>
+
+    <!-- settings screen -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_profile_email">אימייל</string>
+    <string name="settings_name_label">שם מלא</string>
+    <string name="settings_budget_label">תקציב חודשי</string>
+    <string name="settings_income_label">הכנסה צפויה</string>
+    <string name="settings_current_password">סיסמה נוכחית</string>
+    <string name="settings_new_password">סיסמה חדשה</string>
+    <string name="settings_change_password">שינוי סיסמה</string>
+    <string name="settings_save">שמור שינויים</string>
+    <string name="settings_logout">התנתקות</string>
+    <string name="settings_saved_toast">השינויים נשמרו</string>
+
+    <!-- dialog buttons -->
+    <string name="dialog_save">שמור</string>
+    <string name="dialog_cancel">ביטול</string>
 
     <string name="cancel">ביטול</string>
 

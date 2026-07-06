@@ -23,7 +23,8 @@
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.cashkal.HomeFragment"
-        android:label="@string/nav_settings" />
+        android:name="com.example.cashkal.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>
