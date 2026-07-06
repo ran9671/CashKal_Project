@@ -14,7 +14,7 @@
     <!-- dashboard action buttons -->
     <string name="home_add_expense">+ הוסף הוצאה</string>
     <string name="home_add_income">+ הוסף הכנסה</string>
-    <string name="coming_soon">בקרוב 🚧</string>
+    <string name="coming_soon">בקרוב</string>
 
     <!-- bottom navigation tab titles -->
     <string name="nav_home">בית</string>
@@ -87,6 +87,15 @@
     <!-- dialog buttons -->
     <string name="dialog_save">שמור</string>
     <string name="dialog_cancel">ביטול</string>
+
+    <!-- transaction validation and save messages (from Ran's DB layer) -->
+    <string name="transaction_error_invalid_amount">נא להזין סכום תקין</string>
+    <string name="transaction_error_positive_amount">הסכום חייב להיות גדול מ-0</string>
+    <string name="expense_error_choose_type">נא לבחור סוג הוצאה</string>
+    <string name="expense_save_success">ההוצאה נשמרה בהצלחה</string>
+    <string name="expense_save_failed">שמירת ההוצאה נכשלה</string>
+    <string name="income_save_success">ההכנסה נשמרה בהצלחה</string>
+    <string name="income_save_failed">שמירת ההכנסה נכשלה</string>
 
     <string name="cancel">ביטול</string>
 
