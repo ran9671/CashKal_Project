@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- home screen text: greeting and summary cards -->
+    <!-- home screen text -->
     <string name="home_greeting">שלום, %1$s</string>
     <string name="home_greeting_default">שלום</string>
     <string name="home_budget_label">תקציב חודשי</string>
@@ -43,7 +43,7 @@
     <string name="hint_description">לדוגמה: קפה, נסיעה, ספרים</string>
     <string name="hint_note">אפשר להשאיר ריק ולמלא אחר כך</string>
 
-    <!-- expense type options (פינוק / הכרחי / מיותר) -->
+    <!-- expense type options -->
     <string name="expense_type_indulgence">פינוק</string>
     <string name="expense_type_essential">הכרחי</string>
     <string name="expense_type_unnecessary">מיותר</string>
@@ -88,7 +88,7 @@
     <string name="dialog_save">שמור</string>
     <string name="dialog_cancel">ביטול</string>
 
-    <!-- transaction validation and save messages (from Ran's DB layer) -->
+    <!-- transaction validation and save messages -->
     <string name="transaction_error_invalid_amount">נא להזין סכום תקין</string>
     <string name="transaction_error_positive_amount">הסכום חייב להיות גדול מ-0</string>
     <string name="expense_error_choose_type">נא לבחור סוג הוצאה</string>

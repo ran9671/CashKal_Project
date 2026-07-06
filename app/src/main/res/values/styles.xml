@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- primary pill button, iOS style -->
+    <!-- primary button -->
     <style name="CashKalButton">
         <item name="android:background">@drawable/bg_button_rounded</item>
         <item name="android:textColor">@color/white</item>
