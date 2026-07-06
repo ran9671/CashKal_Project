@@ -71,6 +71,12 @@
         <item>אחר</item>
     </string-array>
 
+    <string name="transaction_error_invalid_amount">נא להזין סכום תקין</string>
+    <string name="transaction_error_positive_amount">הסכום חייב להיות גדול מ-0</string>
+    <string name="expense_error_choose_type">נא לבחור סוג הוצאה</string>
+    <string name="expense_save_success">ההוצאה נשמרה בהצלחה</string>
+    <string name="expense_save_failed">שמירת ההוצאה נכשלה</string>
+
     <string name="cancel">ביטול</string>
 
 </resources>
