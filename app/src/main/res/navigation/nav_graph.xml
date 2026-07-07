@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/insightsFragment"
-        android:name="com.example.cashkal.HomeFragment"
+        android:name="com.example.cashkal.InsightsFragment"
         android:label="@string/nav_insights" />
 
     <fragment
