@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -85,7 +86,17 @@ public class TransactionsFragment extends Fragment {
 
     private void setupFilters() {
         binding.rgTypeFilter.setOnCheckedChangeListener((group, checkedId) -> applyFiltersAndSort());
-        binding.rgSort.setOnCheckedChangeListener((group, checkedId) -> applyFiltersAndSort());
+
+        binding.spSort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                applyFiltersAndSort();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
 
         binding.btnChooseCategories.setOnClickListener(v -> showCategoryDialog());
 
@@ -205,13 +216,13 @@ public class TransactionsFragment extends Fragment {
     }
 
     private void sortTransactions(List<TransactionItem> result) {
-        int checkedSortId = binding.rgSort.getCheckedRadioButtonId();
+        int sortPosition = binding.spSort.getSelectedItemPosition();
 
-        if (checkedSortId == R.id.rbDateAsc) {
+        if (sortPosition == 1) {
             result.sort((a, b) -> Long.compare(a.getDate(), b.getDate()));
-        } else if (checkedSortId == R.id.rbHighToLow) {
+        } else if (sortPosition == 2) {
             result.sort((a, b) -> Double.compare(b.getAmount(), a.getAmount()));
-        } else if (checkedSortId == R.id.rbLowToHigh) {
+        } else if (sortPosition == 3) {
             result.sort((a, b) -> Double.compare(a.getAmount(), b.getAmount()));
         } else {
             result.sort((a, b) -> Long.compare(b.getDate(), a.getDate()));
@@ -226,30 +237,34 @@ public class TransactionsFragment extends Fragment {
             checkedItems[i] = selectedCategories.contains(categoriesArray[i]);
         }
 
-        new AlertDialog.Builder(requireContext())
+        AlertDialog dialog = new AlertDialog.Builder(requireContext())
                 .setTitle(R.string.transactions_choose_categories)
-                .setMultiChoiceItems(categoriesArray, checkedItems, (dialog, which, isChecked) -> {
+                .setMultiChoiceItems(categoriesArray, checkedItems, (d, which, isChecked) -> {
                     if (isChecked) {
                         selectedCategories.add(categoriesArray[which]);
                     } else {
                         selectedCategories.remove(categoriesArray[which]);
                     }
                 })
-                .setPositiveButton(R.string.transactions_apply, (dialog, which) -> {
+                .setPositiveButton(R.string.transactions_apply, (d, which) -> {
                     updateCategorySummaryText();
                     applyFiltersAndSort();
                 })
-                .setNeutralButton(R.string.transactions_all_categories, (dialog, which) -> {
+                .setNeutralButton(R.string.transactions_all_categories, (d, which) -> {
                     selectedCategories.clear();
                     updateCategorySummaryText();
                     applyFiltersAndSort();
                 })
-                .show();
+                .create();
+
+        dialog.getListView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        dialog.getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        dialog.show();
     }
 
     private void updateCategorySummaryText() {
         if (selectedCategories.isEmpty()) {
-            binding.tvSelectedCategories.setText(R.string.transactions_all_categories);
+            binding.tvSelectedCategories.setText("");
         } else if (selectedCategories.size() == 1) {
             binding.tvSelectedCategories.setText(selectedCategories.iterator().next());
         } else {

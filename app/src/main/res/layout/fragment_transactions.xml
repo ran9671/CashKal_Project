@@ -15,7 +15,6 @@
         android:id="@+id/tvTransactionsTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
         android:text="@string/transactions_title"
         android:textColor="@color/text_primary"
         android:textSize="28sp"
@@ -35,7 +34,6 @@
             android:id="@+id/tvTypeFilterTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end"
             android:text="@string/transactions_type_title"
             android:textColor="@color/text_primary"
             android:textSize="16sp"
@@ -83,49 +81,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:gravity="end"
             android:text="@string/transactions_sort_title"
             android:textColor="@color/text_primary"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <RadioGroup
-            android:id="@+id/rgSort"
+        <Spinner
+            android:id="@+id/spSort"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/rbDateDesc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/transactions_sort_date_desc"
-                android:textColor="@color/text_primary" />
-
-            <RadioButton
-                android:id="@+id/rbDateAsc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/transactions_sort_date_asc"
-                android:textColor="@color/text_primary" />
-
-            <RadioButton
-                android:id="@+id/rbHighToLow"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/transactions_sort_high_low"
-                android:textColor="@color/text_primary" />
-
-            <RadioButton
-                android:id="@+id/rbLowToHigh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/transactions_sort_low_high"
-                android:textColor="@color/text_primary" />
-
-        </RadioGroup>
+            android:entries="@array/transactions_sort_options" />
 
         <Button
             android:id="@+id/btnChooseCategories"
@@ -143,7 +109,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:gravity="center"
-            android:text="@string/transactions_all_categories"
             android:textColor="@color/muted_text"
             android:textSize="14sp" />
 

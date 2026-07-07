@@ -121,4 +121,12 @@
     <string name="transactions_load_failed">טעינת התנועות נכשלה</string>
     <string name="transactions_income">הכנסה</string>
     <string name="transactions_expense">הוצאה</string>
+
+    <string-array name="transactions_sort_options">
+        <item>תאריך - החדש ביותר</item>
+        <item>תאריך - הישן ביותר</item>
+        <item>סכום - מהגבוה לנמוך</item>
+        <item>סכום - מהנמוך לגבוה</item>
+    </string-array>
+
 </resources>

@@ -70,13 +70,6 @@ public class TransactionAdapter extends BaseAdapter {
         binding.tvTransactionCategory.setText(item.getCategory());
         binding.tvTransactionDate.setText(item.getDateText());
 
-        if (item.getNote() != null && !item.getNote().trim().isEmpty()) {
-            binding.tvTransactionNote.setVisibility(View.VISIBLE);
-            binding.tvTransactionNote.setText(item.getNote());
-        } else {
-            binding.tvTransactionNote.setVisibility(View.GONE);
-        }
-
         if (item.isExpense()) {
             binding.tvTransactionType.setText(R.string.transactions_expense);
             binding.tvTransactionAmount.setText(
